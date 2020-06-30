@@ -6,20 +6,23 @@ on:
 
 jobs:
   build:
+    # Specify the machine environment used to run the test
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        # Try with node.js version 11 and 12
+        node-version: [11.x, 12.x]
 
     steps:
       - uses: actions/checkout@v1
 
+      # first install all dependencies
       - name: Install dependencies
         run: npm install
+      # run the jasmine unit tests
       - name: Test
         run: npm test --
-      - name: E2E
-        run: npm run e2e --
+      # build the application to see if the build is successful
       - name: Build
         run: npm run build -- --prod
 
