@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "devops-final-assignment"
+    }
+  },
+  "defaultProject": "devops-final-assignment",
+  "cli": {
+    "analytics": "40fb1a47-0ed6-47dc-9f98-25e90f94c4a9"
+  }
 }
