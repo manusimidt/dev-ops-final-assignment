@@ -13,6 +13,8 @@ RUN npm run build
 
 # Pull the nginx image from docker hub for serving the angular application
 FROM nginx:1.19.0-alpine as serve-image
+# copy the nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
 # Copy the build files from the previous step into the nginx public folder
 COPY --from=build-image /app/dist/devops-final-assignment /usr/share/nginx/html
 # Expose the port 80 of the container
