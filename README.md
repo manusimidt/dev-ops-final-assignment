@@ -19,3 +19,20 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Build the docker file
+docker build -t dev-ops-final-assignment-image .
+
+## Create a container of the image
+docker run --name dev-ops-final-assignment-container -d -p 8080:80 dev-ops-final-assignment-image
+
+
+
+## Useful docker commands
+| command | description  |
+|---|---|
+| docker image ls           | lists all docker images  |
+| docker rmi {image id}     | deletes the image| 
+| docker image prune        | deletes all unused images |
+| docker container ls -a    |  lists all containers |
+| docker container prune    | delete all stopped containers|
+

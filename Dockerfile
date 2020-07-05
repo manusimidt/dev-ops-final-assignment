@@ -9,7 +9,7 @@ RUN npm install
 # Copy everything else into the working dir
 COPY . .
 # build the application in production mode
-RUN ng build --prod --aot
+RUN npm run build
 
 # Pull the nginx image from docker hub for serving the angular application
 FROM nginx:1.19.0-alpine as serve-image
