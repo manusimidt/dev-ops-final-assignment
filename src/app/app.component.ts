@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'devops-final-assignment';
+  title = 'DevOps Final Assignment'
+  heading = 'This is the repository for the final assignment in DevOps';
 }
