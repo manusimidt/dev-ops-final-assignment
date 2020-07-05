@@ -28,11 +28,11 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-      steps:
-          - uses: actions/checkout@master
-            - name: Publish to Registry
-              uses: elgohr/Publish-Docker-Github-Action@master
-              with:
-                name: m4nu3l99/dev-ops-final-assignment
-                username: ${{ secrets.DOCKER_USERNAME }}
-                password: ${{ secrets.DOCKER_PASSWORD }}
+    steps:
+      - uses: actions/checkout@master
+      - name: Publish to Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: m4nu3l99/dev-ops-final-assignment
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
