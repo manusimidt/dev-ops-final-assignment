@@ -36,3 +36,19 @@ jobs:
           name: m4nu3l99/dev-ops-final-assignment
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: push to heroku
+        env:
+          HEROKU_REGISTRY_URL: registry.heroku.com
+          HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
+        run: |
+          docker login --username=_ --password $HEROKU_TOKEN $HEROKU_REGISTRY_URL
+          export HEROKU_API_KEY=$HEROKU_TOKEN
+          heroku container:login
+          heroku container:push web --app dev-ops-final-assignment
+          heroku container:release web --app dev-ops-final-assignment
+          heroku ps:scale web=1 --app dev-ops-final-assignment
