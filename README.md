@@ -3,6 +3,31 @@
 This repository is the code used in our final assignment in DDOP SoSe20.
 
 
+## Toolchain
+#### Frameworks:
+- Node.js
+- NPM
+- Webpack (js Module bundle)
+- Angular 10
+
+#### VC and Collaboration
+- git
+- GitHub
+- docker
+- DockerHub
+
+#### Testing
+- Jasmine
+- Karma
+- ChromeHeadless
+- Heroku (staging server)
+
+#### CI/CD 
+- GitHub Actions
+- elgohr/Publish-Docker-Github-Action
+- Heroku Registry
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

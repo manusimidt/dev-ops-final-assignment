@@ -1,10 +1,13 @@
 name: CI/CD Pipeline
+
+# run this workflow on every push to the master branch
 on:
   push:
     branches:
       - master
 
 jobs:
+  # this job runs all unit tests
   test:
     # Specify the machine environment used to run the test
     runs-on: ubuntu-latest
@@ -26,6 +29,7 @@ jobs:
       - name: Build
         run: npm run build --prod
 
+  # this job publishes the application on docker hub
   publish:
     runs-on: ubuntu-latest
     steps:
@@ -37,6 +41,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+  # this job deploys the application on the heroku staging server
   deploy:
     runs-on: ubuntu-latest
     steps:
