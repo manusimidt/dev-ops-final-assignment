@@ -4,6 +4,7 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 
 
 ## Toolchain
+
 #### Frameworks:
 - Node.js
 - NPM
@@ -27,6 +28,9 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 - elgohr/Publish-Docker-Github-Action
 - Heroku Registry
 
+
+## CI/CD Pipeline 
+![CI/CD Pipeline Illustration](./docs/img/CI_CD_Toolchain.png "CI/CD Pipeline Illustration")
 
 ## Development server
 
