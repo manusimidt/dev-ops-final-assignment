@@ -18,7 +18,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copy the build files from the previous step into the nginx public folder
 COPY --from=build-image /app/dist/devops-final-assignment /usr/share/nginx/html
 # Expose the port 80 of the container
-EXPOSE 80
+EXPOSE 8080
 # disable the deamon. Nginx will now run in the foreground.
 # Since we only use the container for Nginx we do not need the daemon
 CMD ["nginx", "-g", "daemon off;"]
