@@ -8,17 +8,16 @@ on:
 
 jobs:
   # this job runs all unit tests
-  test:
-    # Specify the machine environment used to run the test
-    runs-on: ubuntu-latest
-    strategy:
+  test: # <- test is the name of the job
+    runs-on: ubuntu-latest # <- Specifies the host used to run the test
+    strategy: # <- creates a build matrix, to execute this job on different versions
       matrix:
-        # Try with node.js version 11 and 12
-        node-version: [11.x, 12.x]
+        node-version: [11.x, 12.x] # <- This job is first executed with node.js version 11 and then with version 12
 
     steps:
-      - uses: actions/checkout@v1
-
+      # Checkout the complete repository
+      - name: Checkout
+        uses: actions/checkout@v1
       # first install all dependencies
       - name: Install dependencies
         run: npm install
