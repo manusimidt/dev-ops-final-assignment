@@ -41,15 +41,15 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
   # this job deploys the application on the heroku staging server
-  deploy:
+  deploy: # <- name of the job
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: push to heroku
-        env:
+        env: # Will define some environment variables
           HEROKU_REGISTRY_URL: registry.heroku.com
-          HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
-        run: |
+          HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }} # API Token needed to get access to the heroku dyno
+        run: | # this commands are executed in order
           docker login --username=_ --password $HEROKU_TOKEN $HEROKU_REGISTRY_URL
           export HEROKU_API_KEY=$HEROKU_TOKEN
           heroku container:login
