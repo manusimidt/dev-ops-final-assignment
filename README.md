@@ -6,6 +6,15 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 ## Toolchain
 
 #### Frameworks:
+| name | Node.js  |
+|---|---|
+| website           | openJS Foundation, https://nodejs.org/en/  |
+| version     | 12.18.2 | 
+| DevOps stage        | creation, as runtime environment |
+| requirements/compatibility    |  - no requirements 
+                                   - cross-platform compatible |
+
+
 - Node.js
 - NPM
 - Webpack (js Module bundle)
