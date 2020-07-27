@@ -8,28 +8,106 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 ## Toolchain
 
 #### Frameworks:
-- Node.js
-- NPM
-- Webpack (js Module bundle)
-- Angular 10
+| name | Node.js  |
+|---|---|
+| website           | OpenJS Foundation, https://nodejs.org/en/  |
+| version     | 12.18.2 | 
+| DevOps stage        | creation, as runtime environment |
+| requirements/compatibility    | no requirements, cross-platform compatible |
+
+| name | npm  |
+|---|---|
+| website           | npm Inc., https://www.npmjs.com/  |
+| version     | 6.14.5 | 
+| DevOps stage        | packaging, as package manager |
+| requirements/compatibility    | no requirements |
+
+| name | Webpack  |
+|---|---|
+| website           | Webpack, https://webpack.js.org/  |
+| version     | 4.43.0 | 
+| DevOps stage        | build, for resource transformation |
+| requirements/compatibility    | requires browser with ES5 compatibility |
+
+| name | Angular  |
+|---|---|
+| website           | Google, https://angular.io/features  |
+| version     | 10.0.3 | 
+| DevOps stage        | build, as web application framework |
+| requirements/compatibility    | requires Node.js and npm |
 
 #### VC and Collaboration
-- git
-- GitHub
-- docker
-- DockerHub
+| name | Git  |
+|---|---|
+| website           | Software Freedom Conservancy, https://git-scm.com/  |
+| version     | 2.27.0 | 
+| DevOps stage        | create, as version control framework |
+| requirements/compatibility    | no requirements |
+
+| name | GitHub  |
+|---|---|
+| website           | GitHub Inc., https://github.com/  |
+| version     | GitHub-Web-Application | 
+| DevOps stage        | create, as version control platform |
+| requirements/compatibility    | creation of GitHub account, desktop app is compatible with Linux, MacOS and Windows |
+
+| name | DockerHub  |
+|---|---|
+| website           | Docker Inc., https://hub.docker.com/  |
+| version     | 19.03.12 | 
+| DevOps stage        | packaging, as package manager |
+| requirements/compatibility    | creation of a Docker ID (account) |
 
 #### Testing
-- Jasmine
-- Karma
-- ChromeHeadless
-- Heroku (staging server)
+| name | Jasmine  |
+|---|---|
+| website           | Pivotal Labs, https://jasmine.github.io/  |
+| version     | 3.5.0 | 
+| DevOps stage        | testing, as a unit test framework |
+| requirements/compatibility    | no requirements |
+
+| name | Karma  |
+|---|---|
+| website           | Friedel Ziegelmayer, https://karma-runner.github.io/5.0/index.html  |
+| version     | 5.0 | 
+| DevOps stage        | testing, as a unit test framework |
+| requirements/compatibility    | requires Node.js |
+
+| name | Headless Chrome  |
+|---|---|
+| website           |   |
+| version     |  | 
+| DevOps stage        | testing |
+| requirements/compatibility    |  |
+
+| name | Heroku  |
+|---|---|
+| website           | Salesforce.com, https://www.heroku.com/  |
+| version     | no information about version | 
+| DevOps stage        | testing as a test server |
+| requirements/compatibility    | requires Git |
 
 #### CI/CD 
-- GitHub Actions
-- elgohr/Publish-Docker-Github-Action
-- Heroku Registry
+| name | GitHub Actions  |
+|---|---|
+| website           | GitHub Inc., https://github.com/features/actions  |
+| version     | no information about version | 
+| DevOps stage        | CI/CD and workflow automation |
+| requirements/compatibility    | requires GitHub |
 
+| name | Publich-Docker-Github-Action  |
+|---|---|
+| website           | GitHub space of Lars elgohr, https://github.com/elgohr/Publish-Docker-Github-Action  |
+| version     | no information about version | 
+| DevOps stage        | CI/CD |
+| requirements/compatibility    | no requirements |
+
+| name | Heroku Registry  |
+|---|---|
+| website           | Salesforce, https://devcenter.heroku.com/articles/container-registry-and-runtime   |
+| version     | no information about version | 
+| DevOps stage        | CI/CD |
+| requirements/compatibility    | Heroku |
 
 ## CI/CD Pipeline 
 ![CI/CD Pipeline Illustration](./docs/img/CI_CD_Toolchain.png "CI/CD Pipeline Illustration")
