@@ -2,6 +2,8 @@
 
 This repository is the code used in our final assignment in DDOP SoSe20.
 
+## DevOps Lifecycle
+![DevOps Tolchain Illustration](https://www.trendreport.de/wp-content/uploads/2017/03/Devops-toolchain.svg_.png)
 
 ## Toolchain
 
