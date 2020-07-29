@@ -19,7 +19,7 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 |---|---|
 | website           | npm Inc., https://www.npmjs.com/  |
 | version     | 6.14.5 | 
-| DevOps stage        | packaging, as package manager |
+| DevOps stage        | create, as package manager, for installing all dependencies |
 | requirements/compatibility    | no requirements |
 
 | name | Webpack  |
@@ -47,15 +47,15 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 | name | GitHub  |
 |---|---|
 | website           | GitHub Inc., https://github.com/  |
-| version     | GitHub-Web-Application | 
-| DevOps stage        | create, as version control platform |
+| version     | webservice | 
+| DevOps stage        | create and verify, as version control and collaboration platform. GitHub also runs the C/CD tests, marks commits where the unit tests failed and sends email notifications about errors in the CI/CD pipeline. |
 | requirements/compatibility    | creation of GitHub account, desktop app is compatible with Linux, MacOS and Windows |
 
 | name | DockerHub  |
 |---|---|
 | website           | Docker Inc., https://hub.docker.com/  |
-| version     | 19.03.12 | 
-| DevOps stage        | packaging, as package manager |
+| version     | webservice, last updated on 14.05.2020 | 
+| DevOps stage        | packaging, as a registry for the docker image |
 | requirements/compatibility    | creation of a Docker ID (account) |
 
 #### Testing
@@ -70,44 +70,44 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 |---|---|
 | website           | Friedel Ziegelmayer, https://karma-runner.github.io/5.0/index.html  |
 | version     | 5.0 | 
-| DevOps stage        | testing, as a unit test framework |
+| DevOps stage        | testing, as a unit test runner |
 | requirements/compatibility    | requires Node.js |
 
 | name | Headless Chrome  |
 |---|---|
-| website           |   |
-| version     |  | 
-| DevOps stage        | testing |
-| requirements/compatibility    |  |
-
-| name | Heroku  |
-|---|---|
-| website           | Salesforce.com, https://www.heroku.com/  |
-| version     | no information about version | 
-| DevOps stage        | testing as a test server |
-| requirements/compatibility    | requires Git |
+| website           | https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md  |
+| version     | 5.2.1 | 
+| DevOps stage        | testing, used to run the Jasmine tests with Karma on the Ubuntu Server |
+| requirements/compatibility    | no requirements |
 
 #### CI/CD 
 | name | GitHub Actions  |
 |---|---|
 | website           | GitHub Inc., https://github.com/features/actions  |
 | version     | no information about version | 
-| DevOps stage        | CI/CD and workflow automation |
+| DevOps stage        | testing and release, used to run the CI/CD pipeline |
 | requirements/compatibility    | requires GitHub |
 
 | name | Publich-Docker-Github-Action  |
 |---|---|
-| website           | GitHub space of Lars elgohr, https://github.com/elgohr/Publish-Docker-Github-Action  |
+| website           | https://github.com/elgohr/Publish-Docker-Github-Action  |
 | version     | no information about version | 
-| DevOps stage        | CI/CD |
+| DevOps stage        | release, used to create and publish the docker image |
 | requirements/compatibility    | no requirements |
+
+| name | Heroku  |
+|---|---|
+| website           | Salesforce.com, https://www.heroku.com/  |
+| version     | no information about version | 
+| DevOps stage        | release, used as a test server |
+| requirements/compatibility    | requires Heroku account |
 
 | name | Heroku Registry  |
 |---|---|
 | website           | Salesforce, https://devcenter.heroku.com/articles/container-registry-and-runtime   |
 | version     | no information about version | 
-| DevOps stage        | CI/CD |
-| requirements/compatibility    | Heroku |
+| DevOps stage        | release, used to upload the application to Heroku |
+| requirements/compatibility    | requires Heroku |
 
 ## CI/CD Pipeline 
 ![CI/CD Pipeline Illustration](./docs/img/CI_CD_Toolchain.png "CI/CD Pipeline Illustration")
