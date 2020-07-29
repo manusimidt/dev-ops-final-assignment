@@ -11,16 +11,16 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 | name | Node.js  |
 |---|---|
 | website           | OpenJS Foundation, https://nodejs.org/en/  |
-| version     | 12.18.2 | 
+| version     | 12.18.3 | 
 | DevOps stage        | creation, as runtime environment |
-| requirements/compatibility    | no requirements, cross-platform compatible |
+| requirements/compatibility    | no specific software and hardware requirements, cross-platform compatible |
 
 | name | npm  |
 |---|---|
 | website           | npm Inc., https://www.npmjs.com/  |
-| version     | 6.14.5 | 
+| version     | 6.14.6 | 
 | DevOps stage        | create, as package manager, for installing all dependencies |
-| requirements/compatibility    | no requirements |
+| requirements/compatibility    | no specific software and hardware requirements |
 
 | name | Webpack  |
 |---|---|
@@ -32,7 +32,7 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 | name | Angular  |
 |---|---|
 | website           | Google, https://angular.io/features  |
-| version     | 10.0.3 | 
+| version     | 10.0.4 | 
 | DevOps stage        | build, as web application framework |
 | requirements/compatibility    | requires Node.js and npm |
 
@@ -48,7 +48,7 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 |---|---|
 | website           | GitHub Inc., https://github.com/  |
 | version     | webservice | 
-| DevOps stage        | create and verify, as version control and collaboration platform. GitHub also runs the C/CD tests, marks commits where the unit tests failed and sends email notifications about errors in the CI/CD pipeline. |
+| DevOps stage        | Create and verify, as version control and collaboration platform. GitHub also runs the C/CD tests, marks commits where the unit tests failed and sends email notifications about errors in the CI/CD pipeline. |
 | requirements/compatibility    | creation of GitHub account, desktop app is compatible with Linux, MacOS and Windows |
 
 | name | DockerHub  |
@@ -62,9 +62,9 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 | name | Jasmine  |
 |---|---|
 | website           | Pivotal Labs, https://jasmine.github.io/  |
-| version     | 3.5.0 | 
+| version     | 3.6.0 | 
 | DevOps stage        | testing, as a unit test framework |
-| requirements/compatibility    | no requirements |
+| requirements/compatibility    | no specific software and hardware requirements |
 
 | name | Karma  |
 |---|---|
@@ -75,10 +75,10 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 
 | name | Headless Chrome  |
 |---|---|
-| website           | https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md  |
+| website           | Google Inc., https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md  |
 | version     | 5.2.1 | 
 | DevOps stage        | testing, used to run the Jasmine tests with Karma on the Ubuntu Server |
-| requirements/compatibility    | no requirements |
+| requirements/compatibility    | no specific software and hardware requirements |
 
 #### CI/CD 
 | name | GitHub Actions  |
@@ -90,10 +90,10 @@ This repository is the code used in our final assignment in DDOP SoSe20.
 
 | name | Publich-Docker-Github-Action  |
 |---|---|
-| website           | https://github.com/elgohr/Publish-Docker-Github-Action  |
+| website           | GitHub Inc., https://github.com/elgohr/Publish-Docker-Github-Action  |
 | version     | no information about version | 
 | DevOps stage        | release, used to create and publish the docker image |
-| requirements/compatibility    | no requirements |
+| requirements/compatibility    | no specific software and hardware requirements |
 
 | name | Heroku  |
 |---|---|
